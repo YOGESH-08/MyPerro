@@ -1,0 +1,260 @@
+
+
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-family: "Libre Baskerville", serif;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+
+.head {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 90px;
+    background-color: gray;
+    margin: 0;
+    padding: 0;
+    border-color: gray;
+    width: 100%;
+    border-bottom: 3px solid black;
+}
+
+.logo {
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+    font-size: 50px;
+    font-family: "Londrina Solid", sans-serif;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.right-corner {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+}
+
+#home, #aboutus, #contactus {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    color: black;
+}
+
+#home {
+    padding-left: 25px;
+}
+
+#aboutus {
+    padding-right: 10px;
+}
+
+button {
+    border-radius: 20px;
+    background-color: black;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: padding 0.7s, background-color 0.3s;
+}
+
+button:hover {
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: green;
+    border: 2px solid orangered;
+}
+
+button:active {
+    background-color: aqua;
+}
+
+button a {
+    text-decoration: none;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.intro {
+    font-weight: 400;
+    font-family: "Londrina Solid", sans-serif;
+    font-size: 40px;
+    height: 100px;
+    padding: 10px;
+    display: inline-block;
+    background-color: wheat;
+    
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: gray;
+    color: white;
+    padding: 20px;
+    border-top: 3px solid black;
+    margin-top:auto;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+    color: orangered;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+    margin: 20px 20px;
+}
+
+.boxx {
+    border: 2px solid gray;
+    flex: 1;
+    max-width: 300px;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 40px;
+    text-align: center;
+}
+
+img {
+    border-radius: 40px;
+    border: 1px solid gray;
+}
+
+.boxx:hover{
+    padding: 10px 10px;
+    transition: padding 1s;
+    border: 3px solid orangered;
+}
+
+
+
+ul {
+    list-style: none;
+}
+
+.inbox {
+    font-family: "Londrina Solid", sans-serif;
+    line-break: strict;
+    font-size: 16px;
+    line-height: 40px;
+}
+.se{
+    justify-content: end;
+    background-color: white;
+    border-radius: 20px;
+    font-size: 30px;
+}
+.bo{
+    background-color: white;
+    opacity: 0.7;
+    border: 3px solid black;
+}
+.login{
+    font-size: 20px;
+    font-weight: bold;
+    height: 100px;
+}
+    
+
+@media (max-width: 1200px) {
+    .head {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto ;
+    }
+    
+    .right-corner {
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+    }
+    
+    #home, #aboutus, #contactus {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    .logo {
+        font-size: 40px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .intro {
+        font-size: 24px;
+    }
+    
+    .container {
+        gap: 2rem;
+    }
+    
+    .boxx {
+        display: block;
+        max-width: 90%;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 500px) {
+    .intro {
+        font-size: 10px;
+        text-align: left;
+    }
+    
+    .logo {
+        font-size: 30px;
+    }
+    
+    .footer-links {
+        gap: 10px;
+    }
+    
+    .footer-links a {
+        font-size: 14px;
+    }
+    .se{
+        font-size: 10px;
+    }
+    .boxx{
+        display: inline-block;
+    }
+}
+.se:hover{
+    opacity: 0.8;
+}
